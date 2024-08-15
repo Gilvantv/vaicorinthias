@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+section {
+    padding: 20px;
+}
+
+#page1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a70606;
+    color: #fff;
+    height: 100vh;
+    background-image: url(asset/mosaico_na_neo_quimica_arena_para_o_duelo_entre_yi18.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+
+.text-container h1 {
+    font-size: 4em;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.image-container img {
+    max-width: 10000px;
+    width: 100%;
+    height: 418px 560px;
+    justify-content: right;
+
+}
+
+#page2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #e2dada;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 350px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 0 8px 15px rgb(217, 8, 8, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+#page3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #000;
+    height: 100vh;
+    background-image: url(asset/IMG_0106.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.form-container {
+    width: 600px;
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ff0505;
+    border-radius: 5px;
+    color: black;
+}
+
+footer {
+    background: #000;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .card-content h2 {
+        font-size: 1.4em;
+    }
+
+    .card-content p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .text-container h1 {
+        font-size: 2em;
+    }
+
+    .card-content h2 {
+        font-size: 1.2em;
+    }
+
+    .card-content p {
+        font-size: 0.8em;
+    }
+
+   
+
+    h1 {
+
+        color: #fff;
+        font-family: monospace;
+        overflow: hidden;
+        border-right: 0.15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        animation: typing 3.5s steps(120, end) alternate infinite,
+            blink-caret 0.5s step-end infinite, rotateText 3.5s ease alternate infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: black;
+        }
+    }
+
+    @keyframes rotateText {
+        0% {
+            transform: rotate(0);
+        }
+
+        25% {
+            transform: rotate(10deg) scale(1.5) translateX(10px) skewY(10deg);
+        }
+
+        75% {
+            transform: rotate(-10deg) scale(0.8) translateX(-10px) skewY(-10deg);
+        }
+
+        100% {
+            transform: rotate(5deg) scale(1.2) translateX(5px) skewY(5deg);
+        }
+    }
+
+    .content {
+        position: relative;
+        z-index: -1;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .button {
+        padding: 10px 16px;
+        background: linear-gradient(153deg, rgba(52, 49, 147, 1) 0%, rgba(48, 44, 99, 1) 100%);
+        border-radius: 16px;
+        color: white;
+        font-size: 14px;
+        border: none;
+        margin-top: 30px;
+        cursor: pointer;
+        height: 45px;
+        width: 160px;
+        font-weight: 700;
+
+        transition: all 0.4s;
+    }
+
+}
